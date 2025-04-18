@@ -258,12 +258,12 @@
           if (currentTab === "reviews") {
             loadTestimonials();
           } else if (currentTab === "team") {
-            const beginnerPlayer = document.querySelector(
-              '.player[onclick*="beginner"]'
+            const freebiesPlayer = document.querySelector(
+              '.player[onclick*="freebies"]'
             );
-            if (beginnerPlayer) {
-              setActivePlayer(beginnerPlayer, "beginner");
-              loadSkins("beginner");
+            if (freebiesPlayer) {
+              setActivePlayer(freebiesPlayer, "freebies");
+              loadFreebies();
             }
           } else {
             document.querySelector(".character-grid").className =

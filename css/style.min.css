@@ -250,8 +250,8 @@
 .light-mode .freebie-name-overlay {
   background: linear-gradient(
     to top,
+    rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
   );
 }
 
@@ -289,7 +289,8 @@
 }
 
 .light-mode .freebie-hero {
-  color: #333;
+  color: #fff;
+  opacity: 0.8;
 }
 
 .freebie-tier {
@@ -350,7 +351,7 @@
   }
 
   .freebie-card {
-    height: 100px;
+    height: 140px;
   }
 
   .freebie-name {
@@ -369,7 +370,7 @@
   }
 
   .freebie-card {
-    height: 100px;
+    height: 140px;
   }
 }
 
@@ -452,12 +453,22 @@ body.light-mode {
   color: #fff;
 }
 .light-mode .content-title,
-.light-mode .hero-name,
+.light-mode .section-title,
 .light-mode .map-preview,
+.light-mode .midasbuy-tagline,
 .light-mode .shop-item h3,
 .light-mode .sidebar-tab.active,
 .light-mode .sidebar-tab:hover {
   color: #333;
+}
+.light-mode .hero-name{
+  color: white;
+  opacity: 0.8;
+}
+.light-mode .map-subtitle,
+.light-mode .gifting-label,
+.light-mode .map-title{
+  color: white;
 }
 .sidebar-tab:hover {
   opacity: 0.9;
@@ -858,8 +869,8 @@ body.light-mode {
 .light-mode .character-name-overlay {
   background: linear-gradient(
     to top,
+    rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0)
   );
 }
 .character-card:hover {
@@ -881,7 +892,9 @@ body.light-mode {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 .light-mode .character-name {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+color: white;
+
 }
 .hero-name {
   bottom: 24px;
@@ -909,7 +922,7 @@ body.light-mode {
   position: absolute;
 }
 .light-mode .character-price {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .character-tag {
   bottom: 40px;
